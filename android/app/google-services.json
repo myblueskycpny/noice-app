@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "238844187004",
+    "project_id": "noice-98c71",
+    "storage_bucket": "noice-98c71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238844187004:android:32367d6a209df52ca014f9",
+        "android_client_info": {
+          "package_name": "com.example.noice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238844187004-3njlsj2e4q7tlje29vmi27enbrvf10j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA11pjIHB0LDtwVavklpF-Ebc06uD5Poig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238844187004-3njlsj2e4q7tlje29vmi27enbrvf10j6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "238844187004-bs4pi1rqtm5fqhm8eblq3n02b9jhlclp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.noice"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
