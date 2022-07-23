@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:noice/kedua/favorite_koleksi.dart';
 import 'package:noice/kedua/playlistStuff/playlist.dart';
+import 'package:noice/kedua/sound/soundpage.dart';
 import 'history_koleksi.dart';
 
 class KoleksiNoice extends StatefulWidget {
@@ -166,7 +167,7 @@ class _KoleksiNoiceState extends State<KoleksiNoice> {
                 ElevatedButton(
                   onPressed: () async {
                     final result = await Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const HistoryKoleksi()),
+                      MaterialPageRoute(builder: (_) => const soundPage()),
                     );
                     if (result != null) {
                       setState(() {});
