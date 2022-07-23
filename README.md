@@ -1,6 +1,6 @@
 # noice
 
-A new Flutter project./n
+A new Flutter project.
 
 ## Getting Started
 
