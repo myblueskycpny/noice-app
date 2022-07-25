@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                 SharedPreferences prefs = await SharedPreferences.getInstance();
                 prefs.remove('isUser');
                 final result = await Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const Login()),
+                  MaterialPageRoute(builder: (_) => const LoginScreen()),
                 );
                 prefs.remove('id');
                 Navigator.pushReplacementNamed(context, '/login');

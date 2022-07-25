@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -59,6 +60,15 @@ class _soundPageState extends State<soundPage> {
     audioPlayer.dispose();
 
     super.dispose();
+  }
+
+  void getHTTP() async {
+    try {
+      var response = await Dio().get("https://retoolapi.dev/PnrpQU/data");
+      print(response.data[0]['name']);
+    } catch (e) {
+      print(e);
+    }
   }
 
   @override
@@ -163,7 +173,16 @@ class _soundPageState extends State<soundPage> {
                   }
                 },
               ),
-            )
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.orange),
+                onPressed: () {
+                  getHTTP();
+                },
+                child: Text("Press it"))
           ],
         ),
       ),

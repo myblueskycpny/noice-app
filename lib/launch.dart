@@ -20,7 +20,7 @@ class _launchPageState extends State<launchPage> {
           future: _initializeFirebase(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
-              return const Login();
+              return const LoginScreen();
             }
             return const Center(
               child: CircularProgressIndicator(),
